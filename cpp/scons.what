@@ -1,0 +1,14 @@
+import os
+
+#get all the build variables we need
+Import('env', 'mex_install_path')
+
+localenv = env.Clone()
+
+localenv.AppendUnique(CCFLAGS=['-fno-omit-frame-pointer'])
+localenv.AppendUnique(CPPDEFINES=['A64BITS','_GNU_SOURCE'])
+localenv.AppendUnique(LIBS=['m','stdc++'])
+localenv.AppendUnique(CPPPATH=['..','~/opt/include','/home/prittjam/src/mexplus/include','.'])
+
+mex1 = localenv.Mex('meanshift',['meanshift.mex.cpp'])
+tmp1 = localenv.Install(mex_install_path,mex1)
