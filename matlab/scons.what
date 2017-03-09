@@ -1,0 +1,3 @@
+#get all the build variables we need
+Import('env', 'mfile_install_path')
+env.Install([mfile_install_path],Glob('*.m'))
