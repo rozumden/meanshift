@@ -1,2 +1,0 @@
-SConscript('cpp/scons.what')
-SConscript('matlab/scons.what')
