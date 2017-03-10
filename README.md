@@ -6,3 +6,15 @@ Matlab wrappers are provided.
 
 ### Dependenices
 Boost, Eigen3
+
+
+## Contributing
+
+Manifold meanshift is an open-source project and we are always open to new contributions: bug reports and fixes, feature requests and contributions.
+
+
+Current contributors:
+
+
+  * James Pritts
+  * Denys Rozumnyi
